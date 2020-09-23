@@ -1,0 +1,25 @@
+ALGORITHM CheckpointALgo
+VAR
+var Str: STRING
+charNb: INTEGER
+charNb:=0
+wordNb:=0
+NbV:=0
+i,n:INTEGER
+n:=len(str)
+tabV=["a","e","i","o","u","y"]
+BEGIN
+
+for i from 1 to n 
+charNb++
+
+if (str[i]==" ") do 
+wordNb++
+charNb--
+END if
+
+if (str[i]==tabV) do
+NbV++
+END if
+END for
+END
